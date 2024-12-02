@@ -1,32 +1,14 @@
-# Prerequisites
-*.d
+# 디버그/Release 폴더 제외
+Debug/
+Release/
+x64/
+*.recipe
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# Visual Studio 관련 파일 제외
+.vs/
+*.suo
+*.user
+*.filters
+*.VC.db
+*.VC.opendb
+*.sqlite
