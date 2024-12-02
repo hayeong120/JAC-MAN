@@ -23,12 +23,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ghost.h" />
+    <ClInclude Include="MainFrame.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="Util.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Ghost.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainFrame.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="Util.cpp" />
