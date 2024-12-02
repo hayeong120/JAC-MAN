@@ -30,18 +30,21 @@ enum ConsoleColor {
     BrightWhite = 15
 };
 
-const int STOP = 0;
-const int UP = 1;
-const int DOWN = 2;
-const int LEFT = 3;
-const int RIGHT = 4;
-const int WALL = 5;
-const int SPACE = 6;
-const int _POINT = 7;
-const int ITEM = 8;
-const int PLAYER = 9;
-const int ENEMY = 10;
-const int DIED_ENEMY = 11;
+// 키보드 값
+enum class KeyValue { UP, DOWN, LEFT, RIGHT, SUBMIT, NONE };
+
+// 플레이어 방향 열거형
+enum Direction { STOP, UP, DOWN, LEFT, RIGHT };
+
+enum TileType {
+    WALL = 5,
+    SPACE = 6,
+    _POINT = 7,
+    ITEM = 8,
+    PLAYER = 9,
+    ENEMY = 10,
+    DIED_ENEMY = 11
+};
 
 typedef struct __POS {
     int x;

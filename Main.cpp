@@ -1,11 +1,9 @@
 #include"Util.h"
-#include"MainFrame.h"
+#include"game.h"
 
 int main() {
-	MainFrame* mainFrame = new MainFrame(100);
-
-	while (mainFrame->isRunning()) {
-		mainFrame->Update();
-		mainFrame->Render();
-	}
+    hideCursor();
+    Game game;
+    game.run();
+    return 0;
 }

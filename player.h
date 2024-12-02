@@ -18,7 +18,7 @@ public:
 private:
 	int x, y;				// 플레이어의 위치
 	char img[3];			// 플레이어 이미지 (문자형태로 저장)
-	STATE state;			// 플레이어의 상태 (이동 방향 등)
+	Direction state;  			// 플레이어의 상태 (이동 방향 등)
 	int score;				// 플레이어의 점수
 	COLOR color;			// 플레이어의 색상
 
@@ -33,7 +33,7 @@ public:
 	void setX(int x) { this->x = x; }
 	void setY(int y) { this->y = y; }
 	void setImg(const char* img) { strcpy_s(this->img, img); }
-	void setState(STATE state) { this->state = state; }
+	void setState(STATE state) { this->state == state; }
 	void setIsDie(bool temp) { this->isDie = temp; }
 
 	int getX() { return x; }
