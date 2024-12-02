@@ -32,7 +32,7 @@ inline long Ghost::getLength(int posx, int posy, int targetx, int targety)
 // 뱡향 결정
 void Ghost::selectDir(int x, int y, bool asc)
 {
-	DnL		dnl[4];
+	DnL	dnl[4];
 	dnl[0].dir = UP;
 	dnl[0].length = getLength(this->x, this->y - 1, x, y);
 	dnl[1].dir = DOWN;
@@ -53,12 +53,13 @@ void Ghost::selectDir(int x, int y, bool asc)
 
 void Ghost::Update(Player* player, Map* map)
 {
-	if (isDie == true)
+	if (isDie == true) {
 		selectDir(map_width / 2, map_height / 2, true);		// 죽었으면 중앙으로 향함
-	else if (player->isBuff())
+	} else if (player->isBuff()) {
 		selectDir(player->getX(), player->getY(), false);	// 플레이어가 버프 상태일 때는 멀리 가도록
-	else
+	} else {
 		selectDir(player->getX(), player->getY(), true);	// 플레이어 추격
+	}
 
 	bool flag = false;
 	for (int i = 0; i < 4 && flag == false; i++) {

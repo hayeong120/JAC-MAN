@@ -33,7 +33,6 @@ public:
 	void setX(int x) { this->x = x; }
 	void setY(int y) { this->y = y; }
 	void setImg(const char* img) { strcpy_s(this->img, img); }
-	void setState(STATE state) { this->state == state; }
 	void setIsDie(bool temp) { this->isDie = temp; }
 
 	int getX() { return x; }

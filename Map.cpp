@@ -76,13 +76,13 @@ void Map::Render()
 			if (back_buffer[i][j] != front_buffer[i][j]) {
 				gotoxy(j * 2, i);
 				switch (back_buffer[i][j]) {
-				case _POINT:	setColor(LightYellow); printf(". "); break;
-				case ITEM:  setColor(LightYellow); printf("☆"); break;
-				case SPACE: setColor(White); printf("  "); break;
-				case WALL:  setColor(Blue);  printf("■"); break;
-				case PLAYER:setColor(LightYellow); printf("●"); break;
-				case ENEMY:setColor(Red);	printf("▲"); break;
-				case DIED_ENEMY:setColor(Blue); printf("△");
+				case _POINT:	setColor(LightYellow); std::cout << ". "; break;
+				case ITEM:  setColor(LightYellow); std::cout << "☆"; break;
+				case SPACE: setColor(White); std::cout << "  "; break;
+				case WALL:  setColor(Blue);  std::cout << "■"; break;
+				case PLAYER:setColor(LightYellow); std::cout << "●"; break;
+				case ENEMY:setColor(Red);	std::cout << "▲"; break;
+				case DIED_ENEMY:setColor(Blue); std::cout << "△";
 				}
 			}
 			front_buffer[i][j] = back_buffer[i][j];		// 화면 상태 갱신

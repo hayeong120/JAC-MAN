@@ -63,8 +63,8 @@ void Player::Update(Map* map)
 void Player::Render() {
 	gotoxy(4, 31);
 	setColor(White);
-	if (Buff == true) printf("BUFF  ¡º  ON  ¡»");
-	else printf("BUFF  ¡º  OFF ¡»");
+	if (Buff == true) std::cout << "BUFF  ¡º  ON  ¡»";
+	else std::cout << "BUFF  ¡º  OFF ¡»";
 
 	gotoxy(4, 32);
 	puts("                  ");
@@ -73,7 +73,7 @@ void Player::Render() {
 
 	gotoxy(30, 31);
 	setColor(White);
-	printf("SCORE ¡º %04d ¡» ", score);
+	std::cout << "SCORE ¡º " << score << " ¡»" ;
 }
 
 void Player::getItem()

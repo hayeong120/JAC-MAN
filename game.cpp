@@ -55,10 +55,11 @@ void Game::showTitle() const {
 // 게임 정보 출력
 void Game::showInfo() const {
     system("cls");
-    std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
-    std::cout << "\t\t\t   [조작법]\n\n";
+    std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+    std::cout << "\t\t          [조작법]\n\n";
     std::cout << "\t\t     이동 : 방향키 이용\n";
-    std::cout << "\t\t선택 : 스페이스바 또는 엔터";
+    std::cout << "\t\t선택 : 스페이스바 또는 엔터\n\n\n";
+    std::cout << "\t\t      만든이 : 장하영\n";
     while (true) {
         if (keyControl() == KeyValue::SUBMIT) {
             break;
